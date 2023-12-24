@@ -1,0 +1,399 @@
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+
+    padding-bottom: 5px;
+}
+
+.content-container {
+    width: 80%;
+    height: auto;
+    text-align: center;
+}
+
+#about-us,
+#services,
+#references,
+#contact {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-inline: auto;
+}
+
+.about-us-content-size,
+.services-content-size,
+.references-content-size {
+    width: 300px;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 700;
+    color: #445573;
+}
+
+/* ABOUT US */
+.about-us-content-container {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about-us-content-container button {
+    background-color: #00AF8F;
+    color: #fff;
+
+    margin-top: 25px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.about-us-image {
+    width: 300px;
+}
+
+/* SERVICES */
+#services {
+    background-color: #eef1f7;
+    text-align: center;
+}
+
+.service-description {
+    margin-block-end: 20px;
+}
+
+.services-list {
+    display: block;
+}
+
+.service-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+
+    background-color: #445573;
+}
+
+.service-content {
+    width: 300px;
+}
+
+.svg-icon {
+    width: 65px;
+    height: 65px;
+    filter: invert(100%);
+}
+
+.service-caption {
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+/* REFERENCES */
+.reference-logo {
+    display: block;
+    width: 200px;
+}
+
+.reference-logo {
+    margin-bottom: 50px;
+}
+
+/* REFERENCES */
+.references-logo-container {
+    width: 100%;
+    margin: 2% auto;
+
+    display: flex;
+    justify-content: space-between;
+    place-content: center;
+    flex-wrap: wrap;
+}
+
+
+.reference-logo {
+    margin: 2% 3%;
+    width: 175px;
+}
+
+.testimonials-container {
+    width: 100%;
+    margin: 2% auto;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.testimonial {
+    flex: 29.5%;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.3);
+    margin: 10px 20px;
+    padding: 10px;
+    min-width: 265px;
+
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #f1f1f1;
+}
+
+.comment-container {
+    margin-bottom: auto;
+}
+
+.quote-text {
+    display: flex;
+    font-size: 42px;
+
+}
+
+.quote-icon {
+    width: 50px;
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    shape-outside: circle(25%);
+}
+
+.testimonal-comment {
+    /* text-align: left; */
+    line-height: 30px;
+
+}
+
+blockquote::before,
+blockquote::after {
+    font-size: 42px;
+    position: relative;
+    color: #df8484;
+    line-height: 10px;
+    bottom: -17px;
+}
+
+blockquote::before {
+    content: "❝";
+    right: 5px;
+}
+
+blockquote::after {
+    content: "❞";
+    left: 5px;
+}
+
+.testimoial-name-container {
+    margin-top: 25px;
+    display: flex;
+}
+
+.testimonial-name {
+    font-weight: bolder;
+    color: #3D5CD1;
+    font-size: 20px;
+    line-height: 0.6em;
+
+    flex-wrap: nowrap;
+}
+
+.testimonial-company {
+    font-weight: bold;
+    font-size: 16px;
+    flex-wrap: nowrap;
+    line-height: 1em;
+
+}
+
+/* CONTACT */
+.contact-container {
+    width: 100%;
+    margin: 2% auto;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-info-container {
+    flex: 25%;
+    margin: 2% 4%;
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.contact-info-container::after {
+    content: '';
+    position: absolute;
+    top: 10%;
+    right: 0;
+    height: 80%;
+    width: 1px;
+    background-color: #ccc;
+    content: '';
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-info div {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-svg-icon-container {
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.contact-svg-icon {
+    width: 40px;
+    height: 40px;
+
+    filter: invert(30%) sepia(100%) hue-rotate(190deg) saturate(500%);
+}
+
+.contact-form {
+    flex: 60%;
+    display: flex;
+    flex-direction: column;
+
+    /* background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.contact-form div {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #F2F1F9;
+    ;
+    border-radius: 4px;
+    margin-top: 5px;
+    font-size: 16px;
+    background-color: #F2F1F9;
+}
+
+input[type="submit"] {
+    background-color: #3D5CD1;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #2045cd;
+}
+
+.contact-form-title {
+    color: #2045cd;
+    text-align: left;
+}
+
+.location-container {
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #3D5CD1;
+}
+
+.location {
+    width: 90%;
+    height: 300px;
+    border: none;
+
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+.blue-seperation-line {
+    width: 100%;
+    height: 20px;
+    background-color: #3D5CD1;
+}
+
+.dark-blue-seperation-line {
+    width: 100%;
+    height: 25px;
+    background-color: rgb(13, 25, 36);
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 1200px) {
+
+    .about-us-content-size,
+    .services-content-size,
+    .references-content-size {
+        width: 1200px;
+    }
+
+    /* ABOUT US */
+    #about-us {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .about-us-content-container {
+        width: 700px;
+        text-align: left;
+        margin-bottom: 0px;
+    }
+
+    .about-us-image {
+        width: 500px;
+    }
+
+    /* SERVICE */
+    .services-list {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .service-content {
+        width: 400px;
+    }
+}
