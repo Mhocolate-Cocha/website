@@ -1,12 +1,12 @@
 const express = require("express")
 const app = express();
-const port = 8000;
+const port = process.env.PORT || 8000;
 const path = require("path");
 
 app.use("/public", express.static(process.cwd() + "/public"));
 
-app.get(["/", "/staticProductPage.html"], (req, res) => {
-  res.sendFile(path.join(process.cwd() + "/public/staticProductPage.html"));
+app.get(["/", "/index.html"], (req, res) => {
+  res.sendFile(path.join(process.cwd() + "/public/index.html"));
 });
 
 app.listen(port, () => {
